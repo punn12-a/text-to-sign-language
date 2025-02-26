@@ -3,27 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Sign Language</title>
-    <link rel="stylesheet" href="style.css">
+    <title>แปลงข้อความเป็นภาษามือ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Real-time Text-to-Sign Language</h1>
-    </header>
-
-    <main>
-        <div class="input-section">
-            <textarea id="text-input" placeholder="พิมพ์ข้อความที่นี่..."></textarea>
-            <button onclick="convertToSign()">แปลงเป็นภาษามือ</button>
-        </div>
-
-        <div class="output-section">
-            <h2>การแสดงผลภาษามือ</h2>
-            <div id="sign-output">
-                <p>นี่คือพื้นที่สำหรับแสดงโมเดล 3D</p>
-            </div>
-        </div>
-    </main>
+    <div class="container">
+        <h1>แปลงข้อความเป็นภาษามือไทย (TSL)</h1>
+        <input type="text" id="inputText" placeholder="พิมพ์คำที่นี่...">
+        <button onclick="convertToSign()">แปลงเป็นภาษามือ</button>
+        <div id="signDisplay"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
