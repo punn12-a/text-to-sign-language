@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แปลงข้อความเป็นภาษามือ</title>
+    <title>TSL Real-time Converter</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>แปลงข้อความเป็นภาษามือไทย (TSL)</h1>
-        <input type="text" id="inputText" placeholder="พิมพ์คำที่นี่...">
+        <textarea id="inputText" placeholder="พิมพ์ข้อความที่นี่..."></textarea>
         <button onclick="convertToSign()">แปลงเป็นภาษามือ</button>
         <div id="signDisplay"></div>
+        <canvas id="threeCanvas"></canvas>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
